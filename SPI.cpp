@@ -38,7 +38,7 @@ void SPIClass::begin(uint8_t _pin) {
 		g_APinDescription[spiPin].ulPinConfiguration);
 
 	// Default speed set to 4Mhz
-	setClockDivider(_pin, 21);
+	setClockDivider(_pin, 42);
 	setDataMode(_pin, SPI_MODE0);
 	setBitOrder(_pin, MSBFIRST);
 }
